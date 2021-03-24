@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Noir;
+    font-weight: bold;
+    src: url("/styles/Noir_medium.otf") format("opentype");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gray) !important;
+}
+
+
+#pageHeader {
+    font-family: Noir;
+
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-size: 60px;
+
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#navbarNav {
+    vertical-align: text-top;
+}
+
+#mainConetent {
+    padding-top: 30px;
+    color: white;
+}
+
+.navbar-brand {
+    padding-right: 10px;
+}

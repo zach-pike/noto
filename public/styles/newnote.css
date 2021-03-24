@@ -1,0 +1,29 @@
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#noNotes {
+    text-align: center;
+}
+
+.noteheader {
+    color: white;
+    font-family: Roboto;
+}
+
+.noteType {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: white;
+    background-color: #4d4d4d;
+    transition-duration: 150ms;
+    cursor: pointer;
+}
+
+.noteType:hover {
+    opacity: 0.8;
+}
