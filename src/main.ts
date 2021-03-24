@@ -29,8 +29,6 @@ let http = new httplib.Server(app);
 // http server.
 let io = require("socket.io")(http);
 
-app.get("/", (req: Request, res: Response) => res.redirect(302, "/notes"))
-
 io.on("connection", function(socket: socketio.Socket) {
 	console.log("a user connected");
 	// whenever we receive a 'message' we log it out
