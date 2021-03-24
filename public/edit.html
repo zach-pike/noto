@@ -42,7 +42,7 @@
             <div id="documentinfo">
                 <h1 id="documentinfoHeader">Doument info</h1>
                 <hr>
-                <p>Info stuffs</p>
+                <p class="data">Word Count: <span id="wordCount">0</span></p>
             </div>
 
             <div id="editorSection">
@@ -50,14 +50,7 @@
             </div>
         </div>
 
-        <script defer>
-            var textarea = document.querySelector("textarea");
-
-            textarea.oninput = function() {
-                textarea.style.height = "";
-                textarea.style.height = textarea.scrollHeight + "px"
-            };
-        </script>
+        <script defer async src="/scripts/editor.js"></script>
 
     </body>
 </html>

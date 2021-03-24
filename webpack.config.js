@@ -5,7 +5,8 @@ module.exports = {
     "mode": "development",
 
     "entry": {
-		"script": "./public/prescripts/script.ts"
+		"script": "./public/prescripts/script.ts",
+        "editor": "./public/prescripts/editor.ts"
     },
 
     module: {
