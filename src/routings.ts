@@ -49,6 +49,10 @@ router.get("/styles/*", (req: Request, res: Response) => {
 	stdRoute(req, res)
 })
 
+router.get("/logo", (req: Request, res: Response) => {
+	res.sendFile(path.join(__dirname, "../public/logo.png"))
+})
+
 
 //routing for homepage
 router.get("/", (req: Request, res: Response) => {

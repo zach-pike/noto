@@ -1,9 +1,5 @@
 [
     {
-        "pageName": "My Notes",
-        "pagePath": "/notes"
-    },
-    {
         "pageName": "About",
         "pagePath": "/about.html"
     },

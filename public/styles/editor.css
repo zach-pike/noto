@@ -1,0 +1,35 @@
+#mainConetent {
+    display: flex !important;
+    flex-direction: row;
+}
+
+#documentinfo {
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: var(--gray-dark);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#documentinfoHeader {
+    text-align: center;
+}
+
+#editorSection {
+    width: 70%;
+    height: 100%;
+    padding-right: 5px;
+}
+
+#editor {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray-dark) !important;
+    color: white;
+    resize: none;
+    padding-left: 5px;
+    font-size: 25px;
+    overflow: hidden;
+}
