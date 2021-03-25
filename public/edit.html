@@ -46,7 +46,13 @@
             </div>
 
             <div id="editorSection">
-                <textarea id="editor" placeholder="Type someting awesome..."></textarea>
+                <!-- <textarea id="editor" placeholder="Type someting awesome...">hello <span style="color: blue;">hi</span></textarea> -->
+                <!-- <div id="editor" contenteditable="true" data-placeholder="Type someting awesome..."></div> -->
+                <fieldset>
+                    <legend>Controls</legend>
+                    <button type="button" class="btn btn-dark" id="boldBtn"><b>B</b></button>
+                </fieldset>
+                <div id="editor" contenteditable="true"></div>
             </div>
         </div>
 

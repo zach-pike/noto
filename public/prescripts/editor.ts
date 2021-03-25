@@ -1,10 +1,22 @@
-const Editor: HTMLTextAreaElement = document.querySelector("#editor")
+import { api } from "./api";
+import * as $ from "jquery";
 
-Editor.oninput = () => {
-    //change textbox height based on enters
-    Editor.style.height = "";
-    Editor.style.height = Editor.scrollHeight + "px"
+const Editor: HTMLDivElement = document.querySelector("#editor")
+const WordCounter: HTMLParagraphElement = document.querySelector("#wordCount")
 
-    //display wordcount
-    document.querySelector("#wordCount").innerHTML = Editor.value.trim().split(" ").length.toString()
-};
+$("#boldBtn").on("click", () => {
+    if ($("#boldBtn").attr("class").includes("active")) {
+        $("#boldBtn").attr("class", $("#boldBtn").attr("class").replace(/( active)/g, ""))
+        Editor.innerHTML = Editor.innerHTML.replace(/(<b>)/g, "").replace(/(<\/b>)/g, "")
+    } else {
+        $("#boldBtn").attr("class", $("#boldBtn").attr("class")+" active")
+        Editor.innerHTML = "<b>" + Editor.innerHTML + "</b>"
+    }
+})
+
+var EditorContext: api = new api(Editor)
+
+console.log(EditorContext.getHTML())
+
+//register word counter
+EditorContext.wordCountInit(WordCounter)
